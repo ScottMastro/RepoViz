@@ -1,0 +1,41 @@
+Ok guys this is where the wav making stuff goes.
+
+OUTLINE
+
+to use:
+    python WavMaker.py infile outputdir
+    
+since the Parser is not yet implemented, the Parser class returns dummy values, and the infile is never read. therefore, to run the program, this is sufficient:
+
+    python WavMaker.py README .
+
+input:
+    infile: a text file containing the output of the git repo analyzer.
+  
+    outputdir: a directory in which the output .wav file will be generated.
+  
+output:
+    a file named out.wav in outputdir
+
+
+STRUCTURE
+
+1. Parser TODO
+    Takes .txt file from GitRepoAnalyzer and parses it into a list of per-user contribution histories (basically an array of integers). Sends list to the synthesizer (or calls it with the list? not sure).
+    Status: not started.
+    
+2. Synthesizer
+    Converts the per-user contribution history into a melody structure understood by PySynth. Turns the melody into a single-channel wav file. Sends list of wav files to Mixer.
+    This is where we can get creative. Choice of convertion algorithm is basically arbitrary.
+    Status: done
+    
+3. Mixer
+    Combines the multiple wav files produced by the synthesizer into one multi-channel wav file.
+    Status: done
+    
+The test of the output is whether or not Narratives 2.0 can use it to produce a visualization.
+
+
+DEPENDENCIES
+
+go read dependencies file

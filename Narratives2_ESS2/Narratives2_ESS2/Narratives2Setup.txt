@@ -1,0 +1,19 @@
+How to run .wav visualization code:
+
+1. download and install processing: https://processing.org/download/
+2. download the Narratives2_ESS2.zip file I have uploaded to our Facebook group 
+3. unpack the Narratives2_ESS2.zip file, it will make a folder called Narratives2_ESS2
+4. Open the processing IDE
+5. in the processing IDE, open the file Narratives2_ESS2/Narratives2_ESS2/Narratives2_ESS2.pde
+6. in the processing IDE, from options on top bar select Sketch->Add File
+select the file: Narratives2_ESS2/Narratives2_ESS2/lib/Ess/library/Ess.jar and click Open
+7. You should now be able to click on the Run button (play icon) in the IDE and run the beethoven-5th.wav file that was included in the zip file
+
+8. The .wav file is specified on line 34 of the Narratives2_ESS2.pde you opened in the IDE
+The file is located in the Narratives2_ESS2/Narratives2_ESS2/data/ directory
+This is where you can substitute your own file
+
+9. To export the app as an executable script, click on the Export Application button in the IDE
+This creates an executable that you can click on and run: Narratives2_ESS2/Narratives2_ESS2/application.linux64/Narratives2_ESS2
+
+This was done on 64 bit Linux

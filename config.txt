@@ -1,0 +1,41 @@
+# test mode or run mode
+test=False
+
+# synthesizer: pysynth (default) or pysynth_b (piano)
+# note that code for both versions of pysynth is in the repository
+synth=pysynth
+
+# number of top words being analyzed
+number_words=7
+
+# use the Mixer.py module (mix temp .wav files)
+# or handle mixing in Synthesizer.py for efficiency
+use_mixer=False
+
+# overlay word sounds (True) or append word sounds (False) for each commit day
+overlay_words=False
+
+# granularity (in number of days)
+granularity=1
+
+# parallel or sequential synthesizer
+parallel_synth=False
+
+# a variable which determines how much adjacent notes overlap 
+# or how much long a note resonates for
+LEG_STAC=2
+
+# beats per minute, rate of music play
+BPM=180
+
+# default length of note
+NOTE_LENGTH=6
+
+# out .wav file name
+OUT_FNAME=out.wav
+
+# variable note length
+variable_note_length=False
+
+# vary volume: more commits == louder note volume
+variable_volume=True
